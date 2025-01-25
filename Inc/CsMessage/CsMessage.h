@@ -481,7 +481,7 @@ class CsMessageIn {
     CsMessageIn( const char *buf, short start, short size = 0x7fff, int ptr = 0 );
 
     CsMessageIn(const CsMessageIn&) = default;
-    CsMessageIn& operator=(const CsMessageIn&) = default
+    CsMessageIn& operator=(const CsMessageIn&) = default;
 
     //!
     //! \brief id Возвращает идентификатор устройства, которому адресовано сообщение
