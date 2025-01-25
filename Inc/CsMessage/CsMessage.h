@@ -480,8 +480,8 @@ class CsMessageIn {
     //!
     CsMessageIn( const char *buf, short start, short size = 0x7fff, int ptr = 0 );
 
-    template <class CsMessageBufTmpl>
-    CsMessageIn( CsMessageBufTmpl &buf, int ptr = 0 ) : mBuffer(buf.mBuffer), mStart(0), mBufSize(buf.mSize), mPtr(ptr), mUsedBits(0) { }
+    CsMessageIn(const CsMessageIn&) = default;
+    CsMessageIn& operator=(const CsMessageIn&) = default
 
     //!
     //! \brief id Возвращает идентификатор устройства, которому адресовано сообщение
