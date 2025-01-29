@@ -1,5 +1,4 @@
-#include "CsMessage.h"
-
+#include "CsMessage/CsMessage.h"
 
 //!
 //! \brief addIntN Добавить N-битное значение
